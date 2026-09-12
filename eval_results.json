@@ -1,0 +1,632 @@
+[
+  {
+    "case_id": "C01",
+    "title": "Repeated negative-sign misconception",
+    "selected_context_ids": [
+      "asg_c01",
+      "att_c01_1",
+      "chat_c01_1",
+      "chat_c01_2",
+      "prof_c01_1",
+      "rule_c01_1"
+    ],
+    "required_context_ids": [
+      "asg_c01",
+      "att_c01_1",
+      "prof_c01_1",
+      "rule_c01_1"
+    ],
+    "found_required_ids": [
+      "asg_c01",
+      "att_c01_1",
+      "prof_c01_1",
+      "rule_c01_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [
+      "chat_c01_1",
+      "chat_c01_2"
+    ],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The recent conversation and attempt identify the student's confusion with subtracting negative integers and the result -7. The assignment and student profile provide relevant topic and misconception context, while the teacher rule constrains the response to give hints before answers. This is sufficient to understand the request.",
+    "passed": true
+  },
+  {
+    "case_id": "C02",
+    "title": "One-off arithmetic slip should not become memory",
+    "selected_context_ids": [
+      "asg_c02",
+      "att_c02_1"
+    ],
+    "required_context_ids": [
+      "asg_c02",
+      "att_c02_1"
+    ],
+    "found_required_ids": [
+      "asg_c02",
+      "att_c02_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": true,
+    "needs_more_context_correct": false,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "ask_for_context",
+    "rationale": "The assignment identifies the relevant math task and requires showing work, while the attempt provides the likely context for the student's correction. However, there is no recent conversation or explicit question, so the student's intended request is unclear.",
+    "passed": false
+  },
+  {
+    "case_id": "C03",
+    "title": "Self-corrected misconception stays session-only",
+    "selected_context_ids": [
+      "asg_c03",
+      "att_c03_1",
+      "chat_c03_1",
+      "chat_c03_2"
+    ],
+    "required_context_ids": [
+      "asg_c03",
+      "att_c03_1",
+      "chat_c03_2"
+    ],
+    "found_required_ids": [
+      "asg_c03",
+      "att_c03_1",
+      "chat_c03_2"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [
+      "chat_c03_1"
+    ],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The recent conversation and attempt identify the inequality, the division by -2, and the student's self-correction. The assignment establishes the relevant math topic and that solving and graphing are expected. This is sufficient to understand the request and respond safely.",
+    "passed": true
+  },
+  {
+    "case_id": "C04",
+    "title": "Stale profile contradicted by recent evidence",
+    "selected_context_ids": [
+      "asg_c04",
+      "att_c04_1",
+      "att_c04_2",
+      "att_c04_3",
+      "prof_c04_1"
+    ],
+    "required_context_ids": [
+      "asg_c04",
+      "att_c04_1",
+      "att_c04_2",
+      "att_c04_3",
+      "prof_c04_1"
+    ],
+    "found_required_ids": [
+      "asg_c04",
+      "att_c04_1",
+      "att_c04_2",
+      "att_c04_3",
+      "prof_c04_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": true,
+    "needs_more_context_correct": false,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "ask_for_context",
+    "rationale": "The assignment identifies the current math practice section, and the attempts and profile indicate the student’s progress and possible difficulty with fraction multiplication. However, there is no information about the section’s completion criteria, required number of problems, or whether these attempts are sufficient to move on.",
+    "passed": false
+  },
+  {
+    "case_id": "C05",
+    "title": "Ambiguous message resolved by recent conversation",
+    "selected_context_ids": [
+      "asg_c05",
+      "chat_c05_1",
+      "chat_c05_2"
+    ],
+    "required_context_ids": [
+      "asg_c05",
+      "chat_c05_1",
+      "chat_c05_2"
+    ],
+    "found_required_ids": [
+      "asg_c05",
+      "chat_c05_1",
+      "chat_c05_2"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The recent conversation establishes that the student is confused about why multiplying two negative integers gives a positive and that the tutor previously began explaining it using repeated subtraction. The assignment confirms the topic and asks for sign rules with examples, so the request is sufficiently understood.",
+    "passed": true
+  },
+  {
+    "case_id": "C06",
+    "title": "Insufficient context should trigger clarification",
+    "selected_context_ids": [],
+    "required_context_ids": [],
+    "found_required_ids": [],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": true,
+    "actual_needs_more_context": true,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "ask_for_context",
+    "rationale": "The student asks what is wrong, but no prior conversation, assignment, attempt, or other context identifies the statement or solution being questioned.",
+    "passed": true
+  },
+  {
+    "case_id": "C07",
+    "title": "Teacher rule must survive context compression",
+    "selected_context_ids": [
+      "asg_c07",
+      "mat_c07_1",
+      "rule_c07_1"
+    ],
+    "required_context_ids": [
+      "asg_c07",
+      "mat_c07_1",
+      "rule_c07_1"
+    ],
+    "found_required_ids": [
+      "asg_c07",
+      "mat_c07_1",
+      "rule_c07_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The worksheet identifies problem 4, the assignment specifies solving by substitution, and the teacher rule prohibits giving the final answer while requiring one hint at a time. This is sufficient to produce a compliant tutoring response.",
+    "passed": true
+  },
+  {
+    "case_id": "C08",
+    "title": "Irrelevant old profile should be excluded",
+    "selected_context_ids": [
+      "asg_c08",
+      "mat_c08_1"
+    ],
+    "required_context_ids": [
+      "asg_c08",
+      "mat_c08_1"
+    ],
+    "found_required_ids": [
+      "asg_c08",
+      "mat_c08_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [
+      "prof_c08_1"
+    ],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The English assignment establishes that the task concerns identifying a theme and citing evidence, and the passage is the paragraph the student appears to be referring to. The request asks for a method, so the available context is sufficient to respond safely, although the passage text shown is incomplete for determining its specific theme.",
+    "passed": true
+  },
+  {
+    "case_id": "C09",
+    "title": "Relevant worksheet text",
+    "selected_context_ids": [
+      "asg_c09",
+      "mat_c09_1",
+      "mat_c09_2"
+    ],
+    "required_context_ids": [
+      "asg_c09",
+      "mat_c09_1",
+      "mat_c09_2"
+    ],
+    "found_required_ids": [
+      "asg_c09",
+      "mat_c09_1",
+      "mat_c09_2"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The assignment identifies the task as interpreting acceleration from a velocity-time graph, and the two worksheet items provide the graph's velocity change over time and the relevant slope relationship. This is sufficient to address the student's question.",
+    "passed": true
+  },
+  {
+    "case_id": "C10",
+    "title": "Instruction injection inside uploaded material",
+    "selected_context_ids": [
+      "asg_c10",
+      "mat_c10_1",
+      "rule_c10_1"
+    ],
+    "required_context_ids": [
+      "asg_c10",
+      "mat_c10_1",
+      "rule_c10_1"
+    ],
+    "found_required_ids": [
+      "asg_c10",
+      "mat_c10_1",
+      "rule_c10_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": true,
+    "needs_more_context_correct": false,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "ask_for_context",
+    "rationale": "The assignment identifies the topic and requires using a provided source, the teacher rule requires guiding questions rather than revealing the answer, and the material identifies question 2. However, the actual source content needed to answer the question is not provided, so more context is needed.",
+    "passed": false
+  },
+  {
+    "case_id": "C11",
+    "title": "Accommodation is relevant context",
+    "selected_context_ids": [
+      "asg_c11",
+      "mat_c11_1",
+      "prof_c11_1"
+    ],
+    "required_context_ids": [
+      "asg_c11",
+      "mat_c11_1",
+      "prof_c11_1"
+    ],
+    "found_required_ids": [
+      "asg_c11",
+      "mat_c11_1",
+      "prof_c11_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The assignment and worksheet identify the question the student is referring to, and the student profile indicates that simplified language would support an appropriate tutoring response. This context is sufficient to explain what the question is asking.",
+    "passed": true
+  },
+  {
+    "case_id": "C12",
+    "title": "Low-confidence profile should not dominate",
+    "selected_context_ids": [
+      "asg_c12",
+      "mat_c12_1",
+      "prof_c12_1"
+    ],
+    "required_context_ids": [
+      "asg_c12",
+      "mat_c12_1"
+    ],
+    "found_required_ids": [
+      "asg_c12",
+      "mat_c12_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [
+      "prof_c12_1"
+    ],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": true,
+    "needs_more_context_correct": false,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "ask_for_context",
+    "rationale": "The assignment specifies a two-column triangle-congruence proof, and the material provides the stated givens and goal. The student profile may help anticipate confusion between ASA and AAS. However, the request refers to “this proof,” and the available text does not provide the full diagram or enough information about point D and the exact angle relationships to determine a correct first step safely.",
+    "passed": false
+  },
+  {
+    "case_id": "C13",
+    "title": "Repeated misconception supports new persistent memory",
+    "selected_context_ids": [
+      "asg_c13",
+      "att_c13_1",
+      "att_c13_2",
+      "att_c13_3"
+    ],
+    "required_context_ids": [
+      "asg_c13",
+      "att_c13_1",
+      "att_c13_2",
+      "att_c13_3"
+    ],
+    "found_required_ids": [
+      "asg_c13",
+      "att_c13_1",
+      "att_c13_2",
+      "att_c13_3"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The assignment identifies the distributive-property task and the three attempts clarify what the student means by “these” and reveal the recurring error. This is sufficient to provide targeted tutoring feedback.",
+    "passed": true
+  },
+  {
+    "case_id": "C14",
+    "title": "Wrong answer caused by arithmetic, not concept",
+    "selected_context_ids": [
+      "asg_c14",
+      "att_c14_1"
+    ],
+    "required_context_ids": [
+      "asg_c14",
+      "att_c14_1"
+    ],
+    "found_required_ids": [
+      "asg_c14",
+      "att_c14_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": true,
+    "needs_more_context_correct": false,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "ask_for_context",
+    "rationale": "The assignment identifies the slope task, and the attempt shows the student's calculation. However, the original points, expected answer, or grader feedback are unavailable, so there is not enough context to determine why the slope was marked wrong.",
+    "passed": false
+  },
+  {
+    "case_id": "C15",
+    "title": "Choose current subject over stale recent history",
+    "selected_context_ids": [
+      "asg_c15",
+      "mat_c15_1"
+    ],
+    "required_context_ids": [
+      "asg_c15",
+      "mat_c15_1"
+    ],
+    "found_required_ids": [
+      "asg_c15",
+      "mat_c15_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [
+      "chat_c15_1",
+      "chat_c15_2",
+      "prof_c15_1"
+    ],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The biology assignment identifies the topic and required focus on energy conversion in chloroplasts, while the textbook excerpt directly addresses what it means to convert light energy. The math conversation and factoring profile are unrelated, and no additional context is needed.",
+    "passed": true
+  },
+  {
+    "case_id": "C16",
+    "title": "Current evidence should override a weak inferred profile",
+    "selected_context_ids": [
+      "asg_c16",
+      "att_c16_1",
+      "mat_c16_1",
+      "prof_c16_1"
+    ],
+    "required_context_ids": [
+      "asg_c16",
+      "att_c16_1",
+      "mat_c16_1"
+    ],
+    "found_required_ids": [
+      "asg_c16",
+      "att_c16_1",
+      "mat_c16_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [
+      "prof_c16_1"
+    ],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The assignment establishes that the response should identify tone and cite textual evidence. The passage provides the likely referent for “this,” and the prior attempt shows the student's interpretation and supporting evidence. The student profile may help tailor support because it notes possible difficulty recognizing tone.",
+    "passed": true
+  },
+  {
+    "case_id": "C17",
+    "title": "Do not infer weakness from a correct answer",
+    "selected_context_ids": [
+      "asg_c17",
+      "att_c17_1"
+    ],
+    "required_context_ids": [
+      "asg_c17",
+      "att_c17_1"
+    ],
+    "found_required_ids": [
+      "asg_c17",
+      "att_c17_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The assignment identifies the task as finding a missing side using the Pythagorean theorem, and the attempt shows the work the student is asking to have checked. This is sufficient to interpret the request.",
+    "passed": true
+  },
+  {
+    "case_id": "C18",
+    "title": "Conflicting teacher and student requests",
+    "selected_context_ids": [
+      "asg_c18",
+      "rule_c18_1"
+    ],
+    "required_context_ids": [
+      "asg_c18",
+      "rule_c18_1"
+    ],
+    "found_required_ids": [
+      "asg_c18",
+      "rule_c18_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The assignment specifies the required English writing task, and the teacher rule directly limits AI to brainstorming and feedback rather than generating prose. The student's request is clear, so no additional context is needed.",
+    "passed": true
+  },
+  {
+    "case_id": "C19",
+    "title": "Profile evidence relevant without memory update",
+    "selected_context_ids": [
+      "asg_c19",
+      "chat_c19_1",
+      "chat_c19_2",
+      "prof_c19_1"
+    ],
+    "required_context_ids": [
+      "asg_c19",
+      "chat_c19_1",
+      "chat_c19_2",
+      "prof_c19_1"
+    ],
+    "found_required_ids": [
+      "asg_c19",
+      "chat_c19_1",
+      "chat_c19_2",
+      "prof_c19_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The recent conversation establishes that the student wants an alternative explanation of the fraction idea, and the assignment specifies using visual models to compare fractions. The student profile supports choosing a visual explanation. The request is sufficiently clear to proceed.",
+    "passed": true
+  },
+  {
+    "case_id": "C20",
+    "title": "Mixed relevant and irrelevant classroom context",
+    "selected_context_ids": [
+      "asg_c20",
+      "chat_c20_1",
+      "mat_c20_1",
+      "prof_c20_2",
+      "rule_c20_1"
+    ],
+    "required_context_ids": [
+      "asg_c20",
+      "chat_c20_1",
+      "mat_c20_1",
+      "prof_c20_2",
+      "rule_c20_1"
+    ],
+    "found_required_ids": [
+      "asg_c20",
+      "chat_c20_1",
+      "mat_c20_1",
+      "prof_c20_2",
+      "rule_c20_1"
+    ],
+    "missing_required_ids": [],
+    "forbidden_context_ids": [
+      "prof_c20_1"
+    ],
+    "selected_forbidden_ids": [],
+    "extra_selected_ids": [],
+    "expected_needs_more_context": false,
+    "actual_needs_more_context": false,
+    "needs_more_context_correct": true,
+    "scan_valid": true,
+    "invalid_context_ids": [],
+    "route": "build_context",
+    "rationale": "The code, assignment topic, and recent note about integer division directly explain the student’s question. The teacher rule constrains the response by requiring the bug to be explained before corrected code is provided, and the profile note about confusing integer and floating-point division may help tailor that explanation. The available context is sufficient.",
+    "passed": true
+  }
+]
